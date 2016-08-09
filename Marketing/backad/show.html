@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta property="qc:admins" content="1604442224721646157633711" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1990 01:01:01 GMT">
+<META HTTP-EQUIV="Last-Modified" CONTENT="Wed, 26 Feb 1990 02:02:02 GMT">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1,user-scalable=no" />
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="keywords" content="Show" />
+<meta name="description" content="Show" />
+<title>Show</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<script src="css/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(e) {
+	$("#show").click(function(e) {
+        $("#menu_zi").toggle();
+		$(".menu").find("span").toggle();
+		
+		if ($(".img").attr("src") == "images/menu.png") {
+			$(".img").attr("src","images/x.png");
+		} else {
+			$(".img").attr("src","images/menu.png");
+		}		
+    });
+	$("#link_show").click(function(e) {
+        $("#footer_two").toggle();
+		if ($(".show_img").attr("src") == "images/b11.png") {
+			$(".show_img").attr("src","images/b10.png");
+		} else {
+			$(".show_img").attr("src","images/b11.png");
+		}		
+    });
+	$("#down a").click(function(e) {
+        //$(document).scrollTop(800);
+		 $('body').animate({scrollTop:'550px'},550);
+    });
+	$("#bottom").click(function(e){
+		/*$("#word_three").toggle();
+		$(".triangle_up").show()
+		if($(".triangle_up").css('top')=="-30px"){
+				$(".triangle_up").css("bottom", "-90px");
+			}
+			else{
+				$(".triangle_up").css("top", "-30px");	
+			}		
+		$("#bottom").find("img").css("bottom", "15%");*/
+		if($("#bottom").find('img').attr("src")=="images/down.png"){
+				  $("#bottom").find('img').attr("src","images/up.png");
+				 }else{
+				  $("#bottom").find('img').attr("src","images/down.png"); 
+		};
+		
+		 if($("#trans").css("bottom")=="0px"){
+			 $("#trans").animate({bottom:"-100px"},500);
+			  $(".swiper-button-next,.swiper-button-prev").animate({top:"95%"},500);
+			 return;
+		 }else{
+		     $("#trans").animate({bottom:"0px"},500);
+			 $(".swiper-button-next,.swiper-button-prev").animate({top:"70%"},500)
+		 }
+			 
+					 
+	});
+	/*var a=$("#bottom").find("img").css("bottom");
+	alert(a);*/
+});
+</script>
+<style> 
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+.swiper-button-next, .swiper-button-prev { top:95%;}
+.swiper-button-next { right:34%;}
+.swiper-button-prev { left:34%}
+.swiper-slide img { width:100%;}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+    	<div><p>SHOWVIEW</p></div>
+        <div class="menu">
+        	<ul>
+	            <li><img src="images/shuaxin.png"></li>
+            	<li><img src="images/server.png"></li>
+            	<li id="show"><img src="images/menu.png" class="img"></li>
+            	<li><span>MENU</span></li>
+            </ul>            
+        </div>               	
+    </div>
+    <div id="banner">
+         <div id="menu_zi">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">work</a></li>
+                <li><a href="">news</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+         </div>
+        <div id="show_img">
+           <div class="swiper-container">
+                <div class="swiper-wrapper">                
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                    <div class="swiper-slide"><img src="images/show.png"></div>
+                </div>
+                
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"><img src="images/r.png" width="20"></div>
+                <div class="swiper-button-prev"><img src="images/l.png" width="20"></div>
+            </div>    
+        </div>
+        <div id="trans">          
+                <div class="triangle_up" style="border-width:0 30px 30px; top:-30px">                             
+                </div> 
+                     <div id="bottom"><img src="images/down.png"></div>
+        			<div id="word_three">
+                        	<p>SALES PROMOTION</p>                           
+                            <span>Event planning is the effective behavior to improve the</span>
+                            <span> occupation rate of market, a can implementation,</span>
+                            <span> operation and highlighted the creative activities,planning case,</span>
+                            <span>can enhance the enterprise visibility and brand reputation.</span>                
+                        </div>
+       			 </div>        
+      </div> 
+     <!-- <div style="height:50px; opacity:0.6"></div>   --> 
+    <div id="footer">
+     <div id="footer_two">
+      <div class="link_img">
+                <ul>
+                    <li><a href=""><img src="images/b1.png"></a></li>
+                    <li><a href=""><img src="images/b2.png"></a></li>
+                    <li><a href=""><img src="images/b3.png"></a></li>
+                    <li><a href=""><img src="images/b4.png"></a></li>
+                    <li><a href=""><img src="images/b5.png"></a></li>
+                    <li><a href=""><img src="images/b6.png"></a></li>
+                    <li><a href=""><img src="images/b7.png"></a></li>
+                    <li><a href=""><img src="images/b8.png"></a></li>
+                    <li><a href=""><img src="images/b9.png"></a></li>            
+                </ul>  	
+      </div> 
+    </div>             	    
+    	<div class="link">
+            <ul>
+                <li><a href=""><img src="images/guangjiao.png"></a></li>
+                <li id="link_show"><img src="images/b11.png" class="show_img"></li>
+            </ul>
+        </div>
+        <div class="address">
+        	<p>Copyright (c) 2015 www.showview.cc all rights reserved.</p>
+            <span>Service hotline : 400-8877-132</span>
+        </div>
+    </div>
+ <script src="js/swiper.min.js"></script> 
+<script>
+    var swiper = new Swiper('.swiper-container', {       
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });
+</script>   
+</div>
+
+</body>
+</html>

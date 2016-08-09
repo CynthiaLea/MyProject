@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta property="qc:admins" content="1604442224721646157633711" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1990 01:01:01 GMT">
+<META HTTP-EQUIV="Last-Modified" CONTENT="Wed, 26 Feb 1990 02:02:02 GMT">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1,user-scalable=no" />
+<meta content="telephone=no, address=no" name="format-detection">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="keywords" content="SHOWVIEW" />
+<meta name="description" content="SHOWVIEW" />
+<title>SHOWVIEW</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script src="css/jquery.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$("#show").click(function(e) {
+        $("#menu_zi").toggle();
+		$(".menu").find("span").toggle();
+		
+		if ($(".img").attr("src") == "images/menu.png") {
+			$(".img").attr("src","images/x.png");
+		} else {
+			$(".img").attr("src","images/menu.png");
+		}		
+    });
+	$("#link_show").click(function(e) {
+        $("#footer_two").toggle();
+		if ($(".show_img").attr("src") == "images/b11.png") {
+			$(".show_img").attr("src","images/b10.png");
+		} else {
+			$(".show_img").attr("src","images/b11.png");
+		}		
+    });
+	$("#down a").click(function(e) {
+        //$(document).scrollTop(800);
+		 $('body').animate({scrollTop:'550px'},550);
+    });
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="header">
+    	<div><p>SHOWVIEW</p></div>
+        <div class="menu">
+        	<ul>
+            	<li><img src="images/server.png"></li>
+            	<li id="show"><img src="images/menu.png" class="img"></li>
+            	<li><span>MENU</span></li>
+            </ul>            
+        </div>               	
+    </div>
+  <div id="banner"> 
+ 	  <?php require('menu_zi.php'); ?>
+  	<img class="banner_bg" src="images/banner.png" />  	
+        <div class="test">
+        <span style="top:0; left:0">THE MOST</span>
+        <p>EXECUTIVE</p>
+        <span style="top:0; left:0">COMPANY</span>
+        </div>
+        <div id="down">
+        	<a href="javascript:();"><img src="images/down.png"></a>
+        </div>
+  </div>
+    <div id="main"> 
+      <ul id="box" class="box">
+      	<li>
+        	<div class="pic">
+        		<img src="images/3.png"> 
+            </div> 
+            
+         </li>
+         <li>
+             
+            <div class="word">
+            <div style="padding-top:10px;">
+        	<p>BUSINESS ACTIVITIES</p>
+              <span>
+                <div>Event planning is the effective behavior to improve the</div>
+                <div> occupation rate of market, a can implementation,</div>
+                <div> operation and highlighted the creative activities,planning case,</div>
+                <div>can enhance the enterprise visibility and brand reputation.
+                </div>
+             </span> 
+            </div>
+                 <div class="down"><img src="images/down.png"><p>Learn More</p></div>   
+        	</div> 
+            <div class="triangle_down"></div>
+      	  </li>      
+      	   <li>
+           <div class="triangle_up"></div>
+            <div class="word">
+             <div style=" padding-top:10px;">
+        	<p>SUBJECT ACTIVITY</p>
+                <span>
+                <div>Event planning is the effective behavior to improve the</div>
+                <div> occupation rate of market, a can implementation,</div>
+                <div> operation and highlighted the creative activities,planning case,</div>
+                <div>can enhance the enterprise visibility and brand reputation.</div>
+             </span> 
+             </div>
+                <div class="down"><img src="images/down.png"><p>Learn More</p></div>      
+        	</div>            
+            </li>
+            <li>
+            <div class="triangle_left" style="left:39%"></div>            
+                 <div class="pic">
+                <img src="images/4.png">
+        		  </div> 
+           </li>
+           <li>
+        	<div class="pic">
+        		<img src="images/2.png"> 
+            </div>
+            
+         </li>
+         <li>
+            <div class="triangle_down"></div>
+            <div class="word">
+             <div style=" padding-top:10px;">
+        	<p>VIDEO</p>
+              <span>
+                <div>Event planning is the effective behavior to improve the</div>
+                <div> occupation rate of market, a can implementation,</div>
+                <div> operation and highlighted the creative activities,planning case,</div>
+                <div>can enhance the enterprise visibility and brand reputation.
+                </div>
+             </span> 
+            </div>
+                 <div class="down"><img src="images/down.png"><p>Learn More</p></div>   
+        	</div> 
+      	  </li>
+          <!-------- ----------->
+           <li>
+           <div class="triangle_up"></div>
+            <div class="word">
+             <div style=" padding-top:10px;">
+        	<p>SALES PROMOTION</p>
+                <span>
+                <div>Event planning is the effective behavior to improve the</div>
+                <div> occupation rate of market, a can implementation,</div>
+                <div> operation and highlighted the creative activities,planning case,</div>
+                <div>can enhance the enterprise visibility and brand reputation.</div>
+             </span> 
+             </div>
+                <div class="down"><img src="images/down.png"><p>Learn More</p></div>      
+        	</div> 
+            </li>
+            <li>
+                 <div class="triangle_left" style="left:39%"></div>
+                 <div class="pic">
+                <img src="images/5.png">
+        	</div> 
+           </li>
+           <li>
+        </ul>   	
+   </div>
+       <div class="blankw2"></div>
+       <div id="none"></div>
+    <div id="footer">
+     <div id="footer_two">
+      <div class="link_img">
+                <ul>
+                    <li><a href=""><img src="images/b1.png"></a></li>
+                    <li><a href=""><img src="images/b2.png"></a></li>
+                    <li><a href=""><img src="images/b3.png"></a></li>
+                    <li><a href=""><img src="images/b4.png"></a></li>
+                    <li><a href=""><img src="images/b5.png"></a></li>
+                    <li><a href=""><img src="images/b6.png"></a></li>
+                    <li><a href=""><img src="images/b7.png"></a></li>
+                    <li><a href=""><img src="images/b8.png"></a></li>
+                    <li><a href=""><img src="images/b9.png"></a></li>            
+                </ul>  	
+      </div> 
+    </div>             	    
+    	<div class="link">
+            <ul>
+                <li><a href=""><img src="images/guangjiao.png"></a></li>
+                <li id="link_show"><img src="images/b11.png" class="show_img"></li>
+            </ul>
+        </div>
+        <div class="address">
+        	<p>Copyright (c) 2015 www.showview.cc all rights reserved.</p>
+            <span>Service hotline : 400-8877-132</span>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
